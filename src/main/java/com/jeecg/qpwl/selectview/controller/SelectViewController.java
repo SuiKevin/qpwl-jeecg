@@ -1,4 +1,6 @@
 package com.jeecg.qpwl.selectview.controller;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -104,7 +106,11 @@ public class SelectViewController extends BaseController {
 		JSONObject paramObj = new JSONObject();
 		paramObj.put("ids", ids);
 		paramObj.put("from", from);
-		mv.addObject("paramObj", paramObj.toString());
+		try {
+			mv.addObject("paramObj", URLEncoder.encode(paramObj.toString(), "utf-8"));
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		return mv;
 	}
 	
@@ -122,7 +128,11 @@ public class SelectViewController extends BaseController {
 		JSONObject paramObj = new JSONObject();
 		paramObj.put("ids", provinceId);
 		paramObj.put("from", from);
-		mv.addObject("paramObj", paramObj.toString());
+		try {
+			mv.addObject("paramObj", URLEncoder.encode(paramObj.toString(), "utf-8"));
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		return mv;
 	}
 	

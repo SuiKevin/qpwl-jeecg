@@ -93,14 +93,16 @@ public class ProvinceController extends BaseController {
 	 * @param request
 	 * @param response
 	 * @param dataGrid
-	 * @param user
+	 * @param province
 	 */
 
 	@RequestMapping(params = "datagrid")
 	public void datagrid(ProvinceEntity province,HttpServletRequest request, HttpServletResponse response, DataGrid dataGrid) {
 		JSONObject parmObj = JSONObject.fromObject(request.getParameter("parmObj"));
 		try{
-			//this.provinceService.queryALL(dataGrid,parmObj);
+//			this.provinceService.queryALL(dataGrid,parmObj);
+			CriteriaQuery cq = new CriteriaQuery(ProvinceEntity.class, dataGrid);
+			provinceService.getDataGridReturn(cq, true);
 			TagUtil.datagrid(response, dataGrid);
 		}catch (Exception e) {
 			throw new BusinessException(e.getMessage());
@@ -163,7 +165,7 @@ public class ProvinceController extends BaseController {
 	/**
 	 * 添加省份
 	 * 
-	 * @param ids
+	 * @param province
 	 * @return
 	 */
 	@RequestMapping(params = "doAdd")
@@ -187,7 +189,7 @@ public class ProvinceController extends BaseController {
 	/**
 	 * 更新省份
 	 * 
-	 * @param ids
+	 * @param province
 	 * @return
 	 */
 	@RequestMapping(params = "doUpdate")
