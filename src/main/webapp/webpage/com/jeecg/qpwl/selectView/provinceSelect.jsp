@@ -16,7 +16,7 @@
 </html>
 <script type="text/javascript">
 function initCheck(data){
-	debugger;
+	// debugger;
 	var paramObj = '${paramObj}';
 	paramObj = JSON.parse(paramObj);
 	var ids = paramObj.ids;
