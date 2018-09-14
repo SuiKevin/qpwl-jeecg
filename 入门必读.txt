@@ -1,29 +1,29 @@
 
 
-1. ±ê×¼¿ª·¢»·¾³£º
+1. æ ‡å‡†å¼€å‘ç¯å¢ƒï¼š
     eclipse + maven + jdk7 + tomcat7 + mysql
-	
-2. ÊÖ¹¤Ö´ĞĞ³õÊ¼»¯SQL½Å±¾
+
+2. æ‰‹å·¥æ‰§è¡Œåˆå§‹åŒ–SQLè„šæœ¬
     docs/db/jeecg-init-mysql.sql
-	×¢Òâ£º ±ØĞëÊÖ¹¤Ö´ĞĞdoc\dbÏÂµÄÊı¾İ¿â½Å±¾
-	
-3. ¿ª·¢»·¾³´î½¨ÈëÃÅ
+	æ³¨æ„ï¼š å¿…é¡»æ‰‹å·¥æ‰§è¡Œdoc\dbä¸‹çš„æ•°æ®åº“è„šæœ¬
+
+3. å¼€å‘ç¯å¢ƒæ­å»ºå…¥é—¨
    http://blog.csdn.net/zhangdaiscott/article/details/50915206
-   
-4. ¼¼Êõ½»Á÷  
-   QQ½»Á÷Èº£º ¢İ293658367¡¢¢Û289782002(Âú)¡¢¢Ú106838471(Âú)¡¢¢Ù106259349(Âú)¡¢¢Ü176031980(Âú)
-   ¹Ù·½ÂÛÌ³£º http://www.jeecg.org 
-   ¹Ù·½ÍøÕ¾£º http://www.guojusoft.com
-   ¹Ù·½²©¿Í£º http://blog.csdn.net/zhangdaiscott
-   
-5. ³£¼ûÎÊÌâÌù(ÈëÃÅ±Ø¿´)
+
+4. æŠ€æœ¯äº¤æµ
+   QQäº¤æµç¾¤ï¼š â‘¤293658367ã€â‘¢289782002(æ»¡)ã€â‘¡106838471(æ»¡)ã€â‘ 106259349(æ»¡)ã€â‘£176031980(æ»¡)
+   å®˜æ–¹è®ºå›ï¼š http://www.jeecg.org
+   å®˜æ–¹ç½‘ç«™ï¼š http://www.guojusoft.com
+   å®˜æ–¹åšå®¢ï¼š http://blog.csdn.net/zhangdaiscott
+
+5. å¸¸è§é—®é¢˜è´´(å…¥é—¨å¿…çœ‹)
     http://www.jeecg.org/forum.php?mod=viewthread&tid=1830&extra=page%3D1
-	
-6. jeecg maven¾µÏñ¹Ù·½ÅäÖÃÎÄµµ(ÖØÒª)
+
+6. jeecg mavené•œåƒå®˜æ–¹é…ç½®æ–‡æ¡£(é‡è¦)
     http://www.jeecg.org/forum.php?mod=viewthread&tid=3949
-   
-7. jeecgÆ½Ì¨¿ª·¢ÊÖ²á
-    docs/¼¼ÊõÎÄµµ
-	
-8. jeecgÈëÃÅÊÓÆµÏÂÔØ
+
+7. jeecgå¹³å°å¼€å‘æ‰‹å†Œ
+    docs/æŠ€æœ¯æ–‡æ¡£
+
+8. jeecgå…¥é—¨è§†é¢‘ä¸‹è½½
     http://www.jeecg.org/forum.php?mod=viewthread&tid=197&extra=page%3D1
