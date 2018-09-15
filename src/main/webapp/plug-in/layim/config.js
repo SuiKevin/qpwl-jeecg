@@ -16,7 +16,8 @@ if(!/^http(s*):\/\//.test(location.href)){
 if (typeof WebSocket != 'undefined') {
 layui.use('layim', function(layim){
 //      //建立WebSocket通讯
-    var socket = new WebSocket("ws://"+chatIp+"/jeecg/WebSocket/"+id);
+//     var socket = new WebSocket("ws://"+chatIp+"/jeecg/WebSocket/"+id);
+    var socket = new WebSocket("ws://"+chatIp+"/WebSocket/"+id);
 
     //基础配置
     layim.config({

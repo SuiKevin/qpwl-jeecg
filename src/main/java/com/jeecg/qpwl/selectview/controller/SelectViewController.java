@@ -122,8 +122,8 @@ public class SelectViewController extends BaseController {
 	@RequestMapping(params = "citys")
 	public ModelAndView citys(HttpServletRequest request){
 		ModelAndView mv = new ModelAndView("com/jeecg/qpwl/selectView/citySelect");
-		System.out.println(request.getParameter("provinceId"));
-		String provinceId = oConvertUtils.getString(request.getParameter("provinceId"));
+		System.out.println(request.getParameter("ids"));
+		String provinceId = oConvertUtils.getString(request.getParameter("ids"));
 		String from = oConvertUtils.getString(request.getParameter("from"));
 		JSONObject paramObj = new JSONObject();
 		paramObj.put("ids", provinceId);
@@ -144,8 +144,17 @@ public class SelectViewController extends BaseController {
 	@RequestMapping(params = "towns")
 	public ModelAndView towns(HttpServletRequest request){
 		ModelAndView mv = new ModelAndView("com/jeecg/qpwl/selectView/townSelect");
-		String ids = oConvertUtils.getString(request.getParameter("ids"));
-		mv.addObject("ids", ids);
+		System.out.println(request.getParameter("ids"));
+		String provinceId = oConvertUtils.getString(request.getParameter("ids"));
+		String from = oConvertUtils.getString(request.getParameter("from"));
+		JSONObject paramObj = new JSONObject();
+		paramObj.put("ids", provinceId);
+		paramObj.put("from", from);
+		try {
+			mv.addObject("paramObj", URLEncoder.encode(paramObj.toString(), "utf-8"));
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		return mv;
 	}
 	

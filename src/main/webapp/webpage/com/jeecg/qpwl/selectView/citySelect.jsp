@@ -18,7 +18,7 @@
 <script type="text/javascript">
 function initCheck(data){
 	// debugger;
-	var paramObj = '${paramObj}';
+    var paramObj = unescape('${paramObj}');
 	paramObj = JSON.parse(paramObj);
 	var ids = paramObj.ids;
 	var idArr = ids.split(",");

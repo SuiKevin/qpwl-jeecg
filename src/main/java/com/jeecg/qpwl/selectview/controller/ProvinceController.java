@@ -98,7 +98,7 @@ public class ProvinceController extends BaseController {
 
 	@RequestMapping(params = "datagrid")
 	public void datagrid(ProvinceEntity province,HttpServletRequest request, HttpServletResponse response, DataGrid dataGrid) {
-		JSONObject parmObj = JSONObject.fromObject(request.getParameter("parmObj"));
+//		JSONObject parmObj = JSONObject.fromObject(request.getParameter("parmObj"));
 		try{
 //			this.provinceService.queryALL(dataGrid,parmObj);
 			CriteriaQuery cq = new CriteriaQuery(ProvinceEntity.class, dataGrid);
